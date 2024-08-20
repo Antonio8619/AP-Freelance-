@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A_P_freelance</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome para íconos -->
+
+</head>
+<body>
+
+    <div class="background">
+        <div class="image">
+            <img src="img/foto__me__pic__01.png" alt="profile">
+    
+    
+        </div>
+    
+    
+    </div>
+    <div class="content">
+    <h1 class="title"><span>Antonio</span> Portillo</h1>
+    <p class="subtitle"> Hola, soy un diseñador creativo y apasionado por el arte de crear diseños visuales impactantes y efectivos. <br><br>
+        Con experiencia en identidad de marca hasta el desarrollo de interfaces de usuario para emprendedores.
+        
+    </p>
+    
+    
+    
+    <a href="https://wa.me/51956390762" class="read__more" target="_blank"> WhatsApp →</a>
+    </div>
+    
+<section id="tranding">
+    <div class="container">
+
+    </div>
+<div class="container">
+<div class="swiper tranding-slider">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+                <img src="img/animation_12_12.gif" alt="trading">
+                </div>
+                <div class="tranding-slide-content">
+                
+                
+                </div>
+                </div>
+
+
+                <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                        <img src="img/animation_19.gif" alt="trading">
+                        </div>
+                        <div class="tranding-slide-content">
+                        
+                        
+                        </div>
+                        </div>                
+
+             
+                        <div class="swiper-slide tranding-slide">
+                            <div class="tranding-slide-img">
+                                <img src="img/animation_13_14.gif" alt="trading">
+                                </div>
+                                <div class="tranding-slide-content">
+                                
+                                
+                                </div>
+                                </div>
+                                
+                                <div class="swiper-slide tranding-slide">
+                                    <div class="tranding-slide-img">
+                                        <img src="img/animation_13_15.gif" alt="trading">
+                                        </div>
+                                        <div class="tranding-slide-content">
+                                        
+                                        
+                                        </div>
+                                        </div>
+
+                                        <div class="swiper-slide tranding-slide">
+                                            <div class="tranding-slide-img">
+                                                <img src="img/animation_13_16.gif" alt="trading">
+                                                </div>
+                                                <div class="tranding-slide-content">
+                                               
+                                                
+                                                </div>
+                                                </div>
+
+
+
+    </div>
+<div class="tranding-slider-control">
+    <div class="swiper-button-prev slider-arrow">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+    </div>
+    <div class="swiper-button-next slider-arrow">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+    </div>
+
+    <div class="swiper-pagination"></div>
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+</section>
+
+
+<section class="row">
+    <div class="section_parallax">
+      <div class="container_parallax">
+        <h2>¨diseño<br>intuitivo¨</h2>
+        
+        <p>
+            Mi enfoque en el diseño no solo se basa en la estética, sino también en la funcionalidad y la claridad,
+             garantizando que cada elemento visual no solo sea atractivo sino también efectivo en comunicar 
+             el mensaje deseado.<br><br>Si estás buscando un diseño que combine creatividad, innovación y precisión, 
+             estás en el lugar adecuado.<br><br> Estoy aquí para ayudarte a crear soluciones de diseño
+              que se destaquen y resuenen con tu audiencia.
+        </p>
+       
+      </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section lass="subscrite__1">
+
+
+
+    <div class="box">
+    
+        <h2>Newsletter</h2>
+        <p>Mantente al tanto de las promociones.<br>Suscríbete al boletín informativo.</p>
+
+    <form name="submit-to-google-sheet">
+        
+        <input type="email" name="email" placeholder="Dirección de email..." required>
+        <button type="submit">Suscríbete</button>
+
+    </form>
+    <span id="msg"></span>
+  
+  
+  </div>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwau1_BSQm-hqJYFzV4813B-3TN4Fqq8LLJikhjtL9pHGEWFQknoBHMo_6eJ4x6bPzB/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+                msg.innerHTML="Genial! gracias por suscribirte!!!"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+   
+
+
+
+
+
+<script src="https://unpkg.com/scrollreveal"></script>  
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</section>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 developed by me</p>
+            <div class="social-icons">
+                <a href="https://github.com/" target="_blank" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank" aria-label="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                
+            </div>
+        </div>
+ 
+
+
+</section>
+
+
+
+</body>
+</html>
