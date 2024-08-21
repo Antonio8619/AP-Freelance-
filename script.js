@@ -46,10 +46,7 @@ var TrandingSlider = new Swiper('.tranding-slider', {
         delay: 1100,
     })
 
-    ScrollReveal().reveal(".container_parallax h2", {
-        ...scrollRevealOption,
-        opacity: 1,
-    })
+   
 
 
     ScrollReveal().reveal(".container_parallax p", {
